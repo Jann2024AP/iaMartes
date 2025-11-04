@@ -4,12 +4,12 @@ import streamlit as st
 from groq import Groq
 from PIL import Image
 
-image = Image.open("./image/imagen2.png")
+#image = Image.open("./image/imagen2.png")
 
 
 st.set_page_config(page_title="Mi chat de IA", page_icon="👍")
 st.title("Mi primera aplicacion con Streamlit")
-st.image(image, caption="Imagen de prueba", use_column_width=True)
+#st.image(image, caption="Imagen de prueba", use_column_width=True)
 nombre = st.text_input("Cual es tu nombre?")
 if st.button("Saludar!"):
     st.write(f"Hola {nombre}! Bienvenido a talento tech")
@@ -99,4 +99,5 @@ if __name__ == "__main__":
 # mensaje = st.chat_input("Escribi tu mensaje:")
 
 # Correr streamlit con la terminal de Python
+
 # python -m streamlit run MiChat.py (aca deben ingresar el nombre del archivo)
